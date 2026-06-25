@@ -6,12 +6,16 @@ import java.util.List;
  */
 public class FileReaderExample {
     public static void main(String[] args) {
-    //    try (FileReader fr=new FileReader("D:/FileOutputStreamExample.txt")) {
-    //     String s=fr.readAllAsString();
-    //     System.out.println(s);
-    //    } catch (Exception e) {
-    //         e.printStackTrace();
-    //    } 
+        //Logic 1
+      /* 
+        try (FileReader fr=new FileReader("D:/FileOutputStreamExample.txt")) {
+        String s=fr.readAllAsString();
+        System.out.println(s);
+       } catch (Exception e) {
+            e.printStackTrace();
+       } 
+         */
+        //Logic 2
     try (FileReader fr=new FileReader("D:/FileOutputStreamExample.txt")) {
         //System.out.println(fr.readAllLines() );
       List<String>s =fr.readAllLines();
@@ -20,7 +24,7 @@ public class FileReaderExample {
         System.out.println(str);
       }
     } catch (Exception e) {
-        // TODO: handle exception
+        e.printStackTrace();
     }
     }
 }
