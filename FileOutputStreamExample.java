@@ -1,5 +1,7 @@
 import java.io.FileOutputStream;
-
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 public class FileOutputStreamExample {
     public static void main(String[] args) 
     {
@@ -13,6 +15,8 @@ public class FileOutputStreamExample {
             fos.write(b);
         //}
         fos.close();
+            Path p=Paths.get("D:/FileOutputStreamExample.txt");
+            Files.setAttribute(p,"dos:readonly",false); 
         }
         catch(Exception e)
         {
