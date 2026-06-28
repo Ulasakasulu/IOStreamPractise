@@ -15,7 +15,7 @@ public class BufferedInputStreamPractise {
         try (FileInputStream fis=new FileInputStream("D:/FileOutputStreamExample.txt");
              BufferedReader br=new BufferedReader(new InputStreamReader(fis))  ) 
         {
-           // System.out.println(br.readAllAsString());
+            // System.out.println(br.readAllAsString());
             System.out.print((char)br.read());
             System.out.print((char)br.read());
             System.out.print((char)br.read());

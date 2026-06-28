@@ -60,12 +60,20 @@ public class CustomerObjectStream {
          }
          System.out.println("Enter name");
          String n=sc.nextLine();
+         boolean found=false;
          for (int i = 0; i < length; i++) {
             if(n.equalsIgnoreCase(l[i].name))
             {
                 System.out.println(l[i]);
+                  found=true;
+                  break;
             }
+          
          }
+         // Print error only if no match was found after checking everyone
+        if (!found) {
+            System.out.println("Entered name is not matched");
+        }
         } catch (Exception e) {
             e.getMessage();
         }

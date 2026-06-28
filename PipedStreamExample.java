@@ -7,7 +7,7 @@ import java.io.PipedOutputStream;
  * @author kasulu
  * @since 26-06-2026
  * @version 1.0
- * PipedStreamExample
+ * 
  */
 class Producer extends Thread
 {
